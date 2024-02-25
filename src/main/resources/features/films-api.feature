@@ -14,7 +14,7 @@ Feature: Star Wars API - films
   Scenario Outline: Validate data being returned by ensuring the producers listed is correct
     Given I am using the star wars api
     When I get a list of all films
-    Then I inspect film 5
+    Then I inspect film 3
     And I validate that the movie is not produced by "<producer>"
 
     Examples:
