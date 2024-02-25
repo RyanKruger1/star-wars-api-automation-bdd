@@ -16,7 +16,7 @@ The SUT is [Star Wars API](https://swapi.dev/documentation).
 
 ### Prerequisites
 
-This automation framework only uses an RestAssured in conjuction with TestNg & Cucumber
+This automation framework only uses RestAssured in conjuction with TestNg & Cucumber
 
 ### Running
 
