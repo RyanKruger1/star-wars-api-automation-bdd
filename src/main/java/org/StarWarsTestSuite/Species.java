@@ -47,7 +47,6 @@ public class Species extends BaseTest {
             JSONObject tmpObject = (JSONObject) obj;
             String name = (String) tmpObject.get("name");
             names.add(name);
-            System.out.println(name);
         }
     }
 
