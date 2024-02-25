@@ -1,6 +1,7 @@
-package StarWarsTestSuite;
+package org.StarWarsTestSuite;
 
-import Core.BaseTest;
+import io.restassured.RestAssured;
+import org.Core.BaseTest;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.ValidatableResponse;
@@ -13,7 +14,6 @@ import org.testng.Assert;
 import java.util.ArrayList;
 import java.util.List;
 
-import static StarWarsTestSuite.Films.filmsResponse;
 import static io.restassured.RestAssured.given;
 
 public class Species extends BaseTest {
@@ -25,7 +25,7 @@ public class Species extends BaseTest {
     @When("I get a list of all species")
     public void retrieve_all_films() {
         speciesResponse =
-                given().
+                RestAssured.given().
                         log().all().
                         get("species/").
                         then().

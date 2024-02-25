@@ -1,6 +1,7 @@
-package StarWarsTestSuite;
+package org.StarWarsTestSuite;
 
-import Core.BaseTest;
+import io.restassured.RestAssured;
+import org.Core.BaseTest;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.ValidatableResponse;
@@ -20,7 +21,7 @@ public class Films extends BaseTest {
     @When("I get a list of all films")
     public void retrieve_all_films() {
         filmsResponse =
-                given().
+                RestAssured.given().
                         log().all().
                         get("films/").
                         then().

@@ -1,6 +1,6 @@
-package StarWarsTestSuite;
+package org.StarWarsTestSuite;
 
-import Core.BaseTest;
+import org.Core.BaseTest;
 import io.cucumber.java.en.Given;
 import io.restassured.RestAssured;
 
