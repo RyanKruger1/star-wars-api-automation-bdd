@@ -26,10 +26,8 @@ public class Species extends BaseTest {
     public void retrieve_all_films() {
         speciesResponse =
                 RestAssured.given().
-                        log().all().
                         get("species/").
-                        then().
-                        log().all();
+                        then();
     }
 
     @Then("I create a list of all species names")

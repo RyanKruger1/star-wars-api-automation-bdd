@@ -22,10 +22,8 @@ public class Films extends BaseTest {
     public void retrieve_all_films() {
         filmsResponse =
                 RestAssured.given().
-                        log().all().
                         get("films/").
-                        then().
-                        log().all();
+                        then();
     }
 
     @Then("I validate the amount of returned films amounts to {int}")
