@@ -26,6 +26,18 @@ task cucumber() {
     }
 }
 
+task cucumberUi() {
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'html:reports/test-report', '--plugin', 'pretty', '--glue', 'org.StarWarsTestSuite', 'src/main/resources/ui-features']
+        }
+    }
+}
+
+
 dependencies {
     implementation group: 'io.cucumber', name: 'cucumber-testng', version: '7.15.0'
     implementation group: 'org.testng', name: 'testng', version: '7.9.0'
