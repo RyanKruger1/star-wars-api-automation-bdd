@@ -18,7 +18,9 @@ Feature: Star Wars API - films
     And I validate that the movie is not produced by "<producer>"
 
     Examples:
-      | producer |
-      | Gary Kurtz|
+      | producer      |
+      | Gary Kurtz    |
       | Rick McCallum |
-      | Ryan Kruger|
+      | Ryan Kruger   |
+
+
