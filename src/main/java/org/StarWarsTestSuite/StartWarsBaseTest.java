@@ -1,8 +1,8 @@
 package org.StarWarsTestSuite;
 
-import org.Core.BaseTest;
 import io.cucumber.java.en.Given;
 import io.restassured.RestAssured;
+import org.Core.BaseTest;
 
 public class StartWarsBaseTest extends BaseTest {
 

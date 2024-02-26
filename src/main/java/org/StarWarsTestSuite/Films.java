@@ -1,25 +1,19 @@
 package org.StarWarsTestSuite;
 
-import com.beust.ah.A;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
-import org.Core.BaseTest;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
+import org.Core.BaseTest;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
-import static io.restassured.RestAssured.given;
 
 public class Films extends BaseTest {
 

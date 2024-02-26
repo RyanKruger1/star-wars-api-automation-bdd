@@ -1,10 +1,10 @@
 package org.StarWarsTestSuite;
 
-import io.restassured.RestAssured;
-import org.Core.BaseTest;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
+import org.Core.BaseTest;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -13,8 +13,6 @@ import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static io.restassured.RestAssured.given;
 
 public class Species extends BaseTest {
 
