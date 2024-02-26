@@ -6,8 +6,8 @@ import org.json.simple.JSONArray;
 
 
 @CucumberOptions(
-        features = "src/test/resources/ui-features",
-        glue = {"fr.tlasnier.cucumber"},
+        features = "src/test/resources/features",
+        glue = {"org.StarWarsTestSuite"},
         plugin = {"pretty", "html:target/cucumber-reports"}
 )
 public class BaseTest {
